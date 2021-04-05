@@ -10,7 +10,7 @@
                             <ul class="navbar-nav">
                                 {% for cat in categories %}
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-{{cat.image}}"></i>{{cat.name}}</a>
+                                    <a class="nav-link" href="{{cat.get_cat_url}}"><i class="fa fa-{{cat.image}}"></i>{{cat.name}}</a>
                                 </li>
                                 {% endfor %}
                             </ul>
@@ -218,7 +218,7 @@
                             </div>
                             <div class="product-image">
                                 <a href="product-detail.html">
-                                    <img src="{{hot.image.url}}" alt="Product Image">
+                                    <img src="{{hot.image.url}}" style ="height:150px ; width:150px" alt="Product Image">
                                 </a>
                                 <div class="product-action">
                                     <a href="#"><i class="fa fa-cart-plus"></i></a>

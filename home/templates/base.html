@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Broadway Ecommerce</title>
+        <title>Ecommerce</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="eCommerce HTML Template Free Download" name="keywords">
         <meta content="eCommerce HTML Template Free Download" name="description">
@@ -95,10 +95,12 @@
                         </div>
                     </div>
                     <div class="col-md-6">
+                        <form method="GET" action="{% url 'home:search' %}">
                         <div class="search">
-                            <input type="text" placeholder="Search">
-                            <button><i class="fa fa-search"></i></button>
+                            <input name= "search" type="text" placeholder="Search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
                         </div>
+                            </form>
                     </div>
                     <div class="col-md-3">
                         <div class="user">
